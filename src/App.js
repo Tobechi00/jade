@@ -1,21 +1,26 @@
-import 'semantic-ui-css/semantic.min.css'
-import Navbar from "./Navbar";
-import Home from "./Home";
-import { Container} from "semantic-ui-react";
-import Sidebar from './Sidebar';
+import Navbar from './navbar';
+import Card from './cards';
+import Main from './searchbar';
+import Top from './topicons';
+import './App.css';
+
 function App() {
   return (
-    <Container fluid>
-    <div className="App">
+    <div>
       <div>
-        <Navbar/>
+        
       </div>
       <div>
-        <Home/>
+        <Main/>
       </div>
-        <Sidebar/>
+      <div>
+        <Top/>
+      </div>
+      <div>
+        <Card/>
+      </div>
     </div>
-      </Container>
+    
   );
 }
 
